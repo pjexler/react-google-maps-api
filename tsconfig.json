@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "strict": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "target": "ES2015",
+    "lib": ["es2015", "dom"],
+    "jsx": "react",
+
+    "skipLibCheck": true,
+    "paths": {
+      "@vis.gl/react-google-maps": ["./src"]
+    }
+  },
+  "include": ["src/**/*", "examples/**/*.ts", "examples/**/*.tsx"],
+  "exclude": ["./dist", "./node_modules"]
+}
